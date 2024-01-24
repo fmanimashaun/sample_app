@@ -61,6 +61,10 @@ group :development, :test do
   gem 'debug', platforms: %i[mri windows]
   gem 'rspec-rails', '~> 5.0'
   gem 'factory_bot_rails'
+
+  gem 'guard', '~> 2.18', '>= 2.18.1'
+  gem 'guard-rspec', '~> 4.7', '>= 4.7.3'
+  gem 'rails-controller-testing', '1.0.5'
 end
 
 group :development do
@@ -77,10 +81,5 @@ end
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem 'capybara'
-  gem 'guard',                    '2.18.0'
-  gem 'guard-minitest',           '2.4.6'
-  gem 'minitest',                 '5.15.0'
-  gem 'minitest-reporters',       '1.5.0'
-  gem 'rails-controller-testing', '1.0.5'
   gem 'selenium-webdriver'
 end

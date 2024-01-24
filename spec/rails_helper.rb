@@ -33,9 +33,9 @@ rescue ActiveRecord::PendingMigrationError => e
 end
 RSpec.configure do |config|
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
-  config.fixture_paths = [
-    Rails.root.join('spec/fixtures')
-  ]
+  # config.fixture_paths = [
+  #   Rails.root.join('spec/fixtures')
+  # ]
 
   # number helper
   config.include ActionView::Helpers::NumberHelper
@@ -44,9 +44,9 @@ RSpec.configure do |config|
   config.include FactoryBot::Syntax::Methods
 
   # Devise
-  config.include Devise::Test::IntegrationHelpers, type: :request
-  config.include Devise::Test::IntegrationHelpers, type: :view
-  config.include Devise::Test::IntegrationHelpers, type: :system
+  # config.include Devise::Test::IntegrationHelpers, type: :request
+  # config.include Devise::Test::IntegrationHelpers, type: :view
+  # config.include Devise::Test::IntegrationHelpers, type: :system
 
   # RSpec Rails
   %i[controller view request].each do |type|
